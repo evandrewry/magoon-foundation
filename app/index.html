@@ -22,7 +22,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-fixed-top navbar-default" role="navigation" ng-init="navCollapse=true">
+    <div class="navbar navbar-default" role="navigation" ng-init="navCollapse=true">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" ng-click="navCollapse = !navCollapse">
@@ -51,6 +51,21 @@
     </div>
 
 
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav nav-stacked">
+              <li ui-sref-active="active"><a ui-sref="app.medicine">Medicine</a></li>
+              <li ui-sref-active="active"><a ui-sref="app.education">Education</a></li>
+              <li ui-sref-active="active"><a ui-sref="app.missionWork">Mission Work</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9" ui-view="header">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="ui-view container"></div>
