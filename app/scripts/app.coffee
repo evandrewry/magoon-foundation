@@ -77,7 +77,7 @@ angular.module('magoonFoundationApp', ['ui.router', 'ui.bootstrap'])
       '':
         templateUrl: 'views/mission-work.html'
       'header@':
-        template: 'views/mission-work-header.html'
+        templateUrl: 'views/mission-work-header.html'
   )
 ])
 
