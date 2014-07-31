@@ -6,11 +6,11 @@ angular
     $stateProvider.state('app',
       abstract: true
       url: ''
-      template: '<div class="ui-view" />'
+      templateUrl: 'views/main.html'
     )
     .state('app.index',
-      url: '/',
-      templateUrl: 'views/main.html'
+      url: '',
+      templateUrl: 'views/home.html'
     )
     .state('app.mission',
       url: '/mission',
