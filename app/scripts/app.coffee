@@ -1,7 +1,7 @@
 'use strict'
 
 angular
-  .module('magoonFoundationApp', ['ui.router'])
+  .module('magoonFoundationApp', ['ui.router', 'ui.bootstrap'])
   .config(['$stateProvider', ($stateProvider) ->
     $stateProvider.state('app',
       abstract: true
