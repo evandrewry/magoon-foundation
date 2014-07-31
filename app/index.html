@@ -56,17 +56,21 @@
 
     <div class="jumbotron">
       <div class="container">
+        <!--
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-2 hidden-xs hidden-sm vcenter">
             <ul class="nav nav-stacked">
               <li ui-sref-active="active"><a ui-sref="app.medicine">Medicine</a></li>
               <li ui-sref-active="active"><a ui-sref="app.education">Education</a></li>
               <li ui-sref-active="active"><a ui-sref="app.missionWork">Mission Work</a></li>
             </ul>
           </div>
-          <div class="col-md-9" ui-view="header">
-          </div>
+          <div class="col-md-9">
+          -->
+            <div ui-view="header"></div>
+          <!--</div>
         </div>
+        -->
       </div>
     </div>
 
