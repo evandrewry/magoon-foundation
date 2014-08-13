@@ -79,5 +79,9 @@ angular.module('magoonFoundationApp', ['ui.router', 'ui.bootstrap'])
       'header@':
         templateUrl: 'views/mission-work-header.html'
   )
+]).run(['$rootScope', '$state', ($rootScope, $state) ->
+  $state.toString = ->
+    $state.current.name.replace '.', '-'
+  $rootScope.$state = $state
 ])
 

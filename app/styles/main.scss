@@ -28,3 +28,21 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .navbar {
   margin-bottom: 0;
 }
+
+.jumbotron.app-index {
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+}
+.jumbotron.app-index::after {
+  content: '';
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(/images/uva-lawn.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
