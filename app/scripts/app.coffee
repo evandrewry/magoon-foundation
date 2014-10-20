@@ -71,14 +71,6 @@ angular.module('magoonFoundationApp', ['ui.router', 'ui.bootstrap'])
       'header@':
         templateUrl: 'views/medicine-header.html'
   )
-  .state('app.missionWork',
-    url: '/mission-work',
-    views:
-      '':
-        templateUrl: 'views/mission-work.html'
-      'header@':
-        templateUrl: 'views/mission-work-header.html'
-  )
 ]).run(['$rootScope', '$state', ($rootScope, $state) ->
   $state.toString = ->
     $state.current.name.replace '.', '-'
